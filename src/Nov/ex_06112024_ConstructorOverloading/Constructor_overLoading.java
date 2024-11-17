@@ -1,7 +1,5 @@
 package Nov.ex_06112024_ConstructorOverloading;
 
-import java.sql.SQLOutput;
-
 public class Constructor_overLoading {
     public static void main(String[] args) {
 
