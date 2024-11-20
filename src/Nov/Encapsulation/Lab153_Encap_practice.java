@@ -6,11 +6,14 @@ public class Lab153_Encap_practice {
         Person p1=new Person("Hema","123");
         String pass= p1.getName(false);
         System.out.println(pass);
-       // String pass1=p1.getPhone_no();
-        //System.out.println(pass1);
 
-        p1.setName("Hemavathi");
-        //p1.setName();
+       String pass1=p1.getPhone_no();
+        System.out.println(pass1);
+
+//if u want to set a Name
+        String sn=p1.setName("Hemavathi123");
+        System.out.println(sn);
+
 
     }
 }
@@ -32,9 +35,10 @@ class Person{
         }
         return "Not Employee";
     }
-
-    public void setName(String name) {
+//Set name Constructor
+    public String setName(String name) {
         this.name = name;
+        return name;
     }
 
     public String getPhone_no() {

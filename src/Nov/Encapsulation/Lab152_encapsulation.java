@@ -1,4 +1,4 @@
-package Nov.Encapsulation;
+    package Nov.Encapsulation;
 
 public class Lab152_encapsulation {
 
@@ -16,7 +16,8 @@ public class Lab152_encapsulation {
 //        String pass=vwologin1.giveMePassword(false);
 //        System.out.println(pass);
      String pass=vwologin1.getPassword(false);
-     //vwologin1.setPassword("Hema@123");
+     vwologin1.setPassword("Hema@123",true);
+
         System.out.println(pass);
 
 
@@ -59,8 +60,11 @@ class GoodVWOLogin {
     }
 //If no one set the Password means we need delete the below function
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(String password,boolean isAdmin) {
+        if (isAdmin) {
+            this.password = password;
+        }else {
+            System.out.println("Now Allowed");
     }
 //    public String giveMePassword(boolean isAuth) {
 //        if(isAuth){
@@ -69,4 +73,4 @@ class GoodVWOLogin {
 //        return "none";
 //
 //    }
-}
+}}
